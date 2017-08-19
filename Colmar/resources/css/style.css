@@ -1,0 +1,489 @@
+/*--UNIVERSAL STYLES--*/
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: white;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #FD9B64;
+}
+
+h4 {
+  font-size: 1.1rem;
+  color: dimgrey;
+}
+
+p {
+  color: dimgrey;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*--HEADER STYLES--*/
+
+#header-large {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+#header-small {
+  display: none;
+}
+
+.logo {
+
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.logo p {
+  color: silver;
+}
+
+.logo p:nth-child(2n+0) {
+  color: black;
+  font-weight: bold;
+}
+
+nav ul {
+
+  display: flex;
+  align-content: center;
+  margin-right: 24px;
+}
+
+nav ul li {
+  margin: 8px;
+}
+
+@media only screen and (max-width: 760px) {
+
+  #header-large {
+    display: none;
+  }
+
+  #header-small {
+
+    display: flex;
+    justify-content: center;
+    height: 64px;
+  }
+
+  .icons {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+  }
+
+
+}
+
+
+/*--BANNER SECTION STYLES--*/
+
+.banner {
+
+  display: flex;
+  padding: 32px 24px;
+  background-color: #9EDFDE;
+}
+
+.banner-img {
+
+  width: 60%;
+}
+
+.banner img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 24px;
+}
+
+.banner-content h3 {
+  color: white;
+}
+
+.banner-button {
+  background-color: dimgrey;
+  padding: 8px 6rem;
+  text-align: center;
+  max-width: 6rem;
+  transition-duration: 250ms;
+}
+
+.banner-button:hover {
+  background-color: #FCD868;
+}
+
+.banner-button p {
+  color: white;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    text-align: center;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .banner-button {
+
+  }
+}
+
+
+/*--INFORMATION SECTION STYLES--*/
+
+.information {
+
+  display: flex;
+  margin: 32px 24px;
+}
+
+.information p {
+  color: dimgrey;
+}
+
+.information-main {
+
+  width: 60%
+}
+
+.information-main h1 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  color: #FD9B64;
+}
+
+#attribution {
+  font-size: .8rem;
+  margin: 32px 0;
+}
+
+.information-main img {
+  height: auto;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.information-schedule {
+  border-left: 2px solid #FD9B64;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 24px;
+  width: 40%;
+}
+
+.information-schedule p {
+  margin-bottom: 8px;
+}
+
+.schedule-item {
+  display: flex;
+  transition-duration: 250ms;
+}
+
+.schedule-item:hover {
+  background-color: #FCD868;
+}
+
+.smol-img {
+  display: none;
+}
+
+.schedule-img {
+
+  width: 35%;
+  padding: 16px;
+}
+
+.schedule-item img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.schedule-item-content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+
+}
+
+.schedule-item-content h3 {
+  color: #FD9B64;
+}
+
+.schedule-item-content a {
+  color: deepskyblue;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .information {
+    justify-content: center;
+    margin: 0;
+  }
+  .information-main {
+    display: none;
+  }
+
+  .information-schedule {
+    width: 100%;
+    margin: 0;
+  }
+
+  .schedule-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .big-img {
+    display: none;
+  }
+
+  .smol-img {
+    display: block;
+  }
+
+  .schedule-img {
+    width: 90%;
+  }
+
+  .schedule-item img {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .schedule-item-content {
+    width: 90%;
+    margin: 0 16px 32px 16px;
+
+  }
+}
+
+
+/*--COURSES SECTION--*/
+
+.courses {
+
+  background-color: #9EDFDE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.courses h1 {
+  margin: 32px 0 0 0;
+}
+
+.course-grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 72px;
+}
+
+.course {
+
+  width: 18rem;
+  margin: 0 16px 16px 16px;
+  background-color: white;
+  transition-duration: 250ms;
+}
+
+.course:hover {
+  background-color: #FCD868;
+}
+
+.course img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.course-content {
+  margin: 0 16px 24px 16px;
+}
+
+.course h4 {
+  margin: 8px 0;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .course-img {
+    display: none;
+  }
+
+  .course h3 {
+    color: white;
+  }
+  .course h4 {
+    display: none;
+  }
+
+  .course p {
+    display: none;
+  }
+
+  .course {
+    background-color: lightgrey;
+  }
+
+}
+
+/*--THESIS EXHIBIT SECTION--*/
+
+.thesis-exhibit {
+
+  margin: 32px 24px;
+}
+
+.thesis-exhibit h1 {
+  text-align: center;
+}
+
+.thesis-grid {
+
+  display: flex;
+}
+.thesis-big {
+
+  width: 60%
+}
+
+.thesis-big h1 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.thesis-big video {
+  height: auto;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.thesis-small {
+  border-left: 2px solid #FD9B64;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 24px;
+  width: 40%;
+}
+
+.thesis-small p {
+  margin-bottom: 8px;
+}
+
+.thesis-small-item {
+  display: flex;
+  transition-duration: 250ms;
+}
+
+.thesis-small-item:hover {
+  background-color: #FCD868;
+}
+
+.thesis-small-item-img {
+
+  width: 35%;
+  padding: 16px;
+}
+
+.thesis-small-item img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.thesis-small-item-content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .thesis-small {
+    display: none;
+  }
+
+  .thesis-big h3 {
+    display: none;
+  }
+
+  .thesis-big p {
+    display: none;
+  }
+
+  .thesis-big {
+    width: 100%;
+  }
+}
+
+/*--FOOTER--*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  padding: 16px 24px;
+  border-top: 1px solid lightgrey;
+  font-size: .8rem;
+}
